@@ -1,0 +1,60 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center; /* Center columns horizontally */
+  align-items: center; /* Center columns vertically */
+  min-height: 100vh; /* Ensures columns are centered vertically even if content is small */
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.block1,
+.block2,
+.block3 {
+  padding: 80px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: cursive;
+  text-align: center;
+  /* transition: background-color 0.3s; Transition for hover effect */
+}
+
+.block1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.block2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.block3 {
+  background-color: hsl(179, 100%, 13%);
+}
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.load-more-btn {
+  display: block;
+  color: #ccc;
+  padding: 7px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
+  margin: 20px auto; /* Center button */
+}
+
+/* .load-more-btn:hover, .block1:hover, .block2:hover, .block3:hover {
+  background-color: #ccc;
+  color: white;
+} */
